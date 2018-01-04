@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Shadows Into Light Two', cursive;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+  text-align: center
+}
+
+[class*="sec-"] {
+  border: 3px solid white; /*se le agrega el borde y va a respetar el porcentaje total*/
+  min-height: 7px; /*tamaño estandar es 7px*/
+  float: left;
+  padding: 12px; /*espacio de los gutters*/
+}
+
+.sec-encabezado {
+  background-color: #F7EA00;
+  min-height: 200px;
+  width: 100%;
+}
+
+.sec-contenido1 {
+  background-color: #5EC9EA;
+  min-height: 230px;
+  width: 20%;
+}
+
+.sec-contenido2 {
+  background-color: #E836B1;
+  min-height: 230px;
+  width: 20%;
+}
+
+.sec-contenido3 {
+  background-color: #F7B93C;
+  min-height: 230px;
+  width: 20%;
+}
+
+.sec-contenido4 {
+  background-color: #ED5A5A;
+  min-height: 230px;
+  width: 20%;
+}
+
+.sec-contenido5 {
+  background-color: #41EFB9;
+  min-height: 230px;
+  width: 20%;
+}
+
+.sec-contenido6 {
+  background-color: #92E542;
+  min-height: 230px;
+  width: 20%;
+}
+
+.sec-columna-lateral {
+  background-color: #E486EA;
+  min-height: 460px;
+  width: 40%;
+  float: right;
+}
+
+@media screen and (max-width: 320px) {
+  .sec-encabezado,
+  .sec-columna-lateral {
+    min-height: 40px;
+    width: 100%;
+  }
+  .sec-contenido1,
+  .sec-contenido2,
+  .sec-contenido3,
+  .sec-contenido4,
+  .sec-contenido5,
+  .sec-contenido6 {
+    border: 10px solid white;
+    min-height: 110px;
+    width: 33.33%;
+  }
+}
