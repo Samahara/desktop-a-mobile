@@ -1,12 +1,5 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Shadows Into Light Two', cursive;
-  margin: 0;
-  padding: 0;
-  width: 100%;
 }
 
 h1 {
@@ -15,41 +8,31 @@ h1 {
   text-align: center
 }
 
-[class*="sec-"] {
-  border: 3px solid white; /*se le agrega el borde y va a respetar el porcentaje total*/
-  min-height: 7px; /*tamaño estandar es 7px*/
-  float: left;
-  padding: 12px; /*espacio de los gutters*/
-}
-
-.sec-encabezado {
+.col-abc {
   background-color: #F7EA00;
-  min-height: 200px;
-  width: 100%;
+  margin: 5px;
+  height: 200px;
+  width: calc(100% - 10px);
 }
 
-.sec-contenido {
+.col-bca {
   background-color: #34EAA9;
-  min-height: 460px;
-  width: 60%;
+  margin: 5px;
+  height: 460px;
+  width: calc(66.66% - 10px);
 }
 
-.sec-columna-lateral {
+.col-cab {
   background-color: #E486EA;
-  min-height: 460px;
-  width: 40%;
+  margin: 5px;
+  height: 460px;
+  width: calc(33.33% - 10px);
 }
 
-@media screen and (max-width: 320px) {
-  .sec-encabezado,
-  .sec-columna-lateral {
-    min-height: 40px;
-  }
-  .sec-contenido {
-    min-height: 240px;
-  }
-  .sec-contenido,
-  .sec-columna-lateral {
-    width: 100%;
+@media screen and (max-width: 768px) {
+  .col-bca,
+  .col-cab {
+    height: 200px;
+    width: calc(100% - 10px);
   }
 }
