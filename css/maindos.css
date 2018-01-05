@@ -1,78 +1,78 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Shadows Into Light Two', cursive;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
 h1 {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center
 }
 
-[class*="sec-"] {
-  border: 3px solid white; /*se le agrega el borde y va a respetar el porcentaje total*/
-  min-height: 7px; /*tamaño estandar es 7px*/
-  float: left;
-  padding: 12px; /*espacio de los gutters*/
+.col-a {
+  background-color: #F7EA00;
+  margin: 5px;
+  height: 200px;
+  width: calc(100% - 10px);
 }
 
-.sec-encabezado {
-  background-color: #F7EA00;
-  min-height: 200px;
+.col-bcde {
+  height: 470px;
+  margin: 5px;
+  width: calc(66.66% - 10px);
+}
+
+.col-b {
+  background-color: #34EAA9;
+  margin-bottom: 5px;
+  height: 230px;
   width: 100%;
 }
 
-.sec-contenido1 {
-  background-color: #34EAA9;
-  min-height: 230px;
-  width: 60%;
-}
-
-.sec-contenido2 {
+.col-c {
   background-color: #36B6E8;
-  min-height: 230px;
-  width: 20%;
+  height: 230px;
+  width: 33.33%;
 }
 
-.sec-contenido3 {
+.col-d {
   background-color: #E836B1;
-  min-height: 230px;
-  width: 20%;
+  margin-left: 5px;
+  height: 230px;
+  width: calc(33.33% - 5px);
 }
 
-.sec-contenido4 {
+.col-e {
   background-color: #F7B93C;
-  min-height: 230px;
-  width: 20%;
+  margin-left: 5px;
+  height: 230px;
+  width: calc(33.33% - 5px);
 }
 
-.sec-columna-lateral {
+.col-f {
   background-color: #E486EA;
-  min-height: 460px;
-  width: 40%;
-  float: right;
+  margin: 5px;
+  height: 470px;
+  width: calc(33.33% - 10px);
 }
 
-@media screen and (max-width: 320px) {
-  .sec-encabezado,
-  .sec-columna-lateral {
-    min-height: 40px;
-    width: 100%;
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
   }
-  .sec-contenido1 {
-    min-height: 130px;
-    width: 100%;
+  .col-a,
+  .col-f {
+    height: 80px;
+    width: calc(100% - 10px);
   }
-  .sec-contenido2,
-  .sec-contenido3,
-  .sec-contenido4 {
-    min-height: 110px;
-    width: 33.33%;
+  .col-bcde {
+    height: 220px;
+    width: calc(100% - 10px);
+  }
+  .col-b {
+    height: 140px;
+  }
+  .col-c,
+  .col-d,
+  .col-e {
+    height: 80px;
+  }
+  .col-f {
+    margin-top: 10px;
   }
 }
